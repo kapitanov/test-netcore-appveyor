@@ -4,3 +4,7 @@ services:
 script: 
   - chmod +x ./build-docker.sh
   - ./build-docker.sh
+addons:
+  artifacts:
+    paths:
+    - artifacts/*.nupkg
