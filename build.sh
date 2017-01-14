@@ -1,5 +1,16 @@
-dotnet --info
-dotnet --versoin
+echo "********************"
+echo "* dotnet : restore *"
+echo "********************"
+
 dotnet restore ./src/project.csproj
+
+
+echo "********************"
+echo "* dotnet : build   *"
+echo "********************"
 dotnet build ./src/project.csproj
-dotnet run -p ./src/project.csproj
+
+echo "********************"
+echo "* dotnet : pack    *"
+echo "********************"
+dotnet pack ./src/project.csproj -o /build/artifacts
