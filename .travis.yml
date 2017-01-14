@@ -2,8 +2,8 @@ sudo: required
 services:
   - docker
 script: 
-  - chmod +x ./build-docker.sh
-  - ./build-docker.sh
+  - chmod +x ./build-travis.sh
+  - ./build-travis.sh
 addons:
   artifacts:
     paths:

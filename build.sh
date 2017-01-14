@@ -14,3 +14,9 @@ echo "********************"
 echo "* dotnet : pack    *"
 echo "********************"
 dotnet pack ./src/project.csproj -o /build/artifacts
+
+
+echo "********************"
+echo "Artifacts:"
+ls /build/artifacts
+echo "********************"
