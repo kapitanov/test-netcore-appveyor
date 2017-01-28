@@ -1,8 +1,13 @@
 write-host "********************"
+write-host "* dotnet : version *"
+write-host "********************"
+dotnet --help
+dotnet --version
+
+write-host "********************"
 write-host "* dotnet : restore *"
 write-host "********************"
 dotnet restore ./src/project.csproj
-
 
 write-host "********************"
 write-host "* dotnet : build   *"
